@@ -1,0 +1,999 @@
+/*
+|----------------------------------------------------------------------
+|       Media Queries
+|----------------------------------------------------------------------
+*/
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    /*_____ Common _____*/
+    #blog .flexRow > .col1,
+    #press .flexRow > .col1 {
+        width: 70%;
+    }
+    #blog .flexRow > .col2,
+    #press .flexRow > .col2 {
+        width: 30%;
+    }
+    #blog .lst > li,
+    #press .lst > li {
+        width: 50%;
+    }
+    #profile .flexRow > .col1 {
+        width: 60%;
+    }
+    #profile .flexRow > .col2 {
+        width: 40%;
+    }
+    /*_____ Shop _____*/
+    #shop .flexRow > .col {
+        width: 50%;
+    }
+    #shop .flexRow > .col1 {
+        width: 34%;
+    }
+    #shop .flexRow > .col2 {
+        width: 66%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    /*_____ Common _____*/
+    #srch .internal {
+        height: initial;
+        min-height: initial;
+        flex-flow: wrap;
+    }
+    #srch .topHead {
+        display: flex;
+    }
+    #srch .headBlk {
+        display: flex;
+    }
+    #srch .internal > #srchBlk {
+        width: 100%;
+        min-width: initial;
+        height: auto;
+        min-height: 500px;
+        margin: 0;
+    }
+    #srch .internal > #srchBlk.height {
+        height: 100vh !important;
+    }
+    #srch .internal > #mapBlk {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        min-width: initial;
+        background: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 10;
+    }
+    #srch .internal > #mapBlk.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    #srch .topHead .sortLst > li.mapView {
+        display: block;
+    }
+    #products .flexRow > .col {
+        width: 33.3334%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {}
+
+@media screen and (max-width:991px) {
+    /*_____ Navigation _____*/
+    html.move {
+        overflow: hidden !important;
+    }
+    body {
+        left: 0;
+    }
+    body.move {
+        overflow: hidden !important;
+        position: relative;
+        left: -250px;
+    }
+    .toggle {
+        display: flex;
+    }
+    nav {
+        position: fixed !important;
+        top: 0;
+        right: -250px;
+        bottom: 0;
+        width: 250px;
+        display: block;
+        margin: 0 !important;
+        background: #fff;
+        border-left: 1px solid #eee;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    nav.move {
+        right: 0;
+    }
+    nav > ul {
+        display: block;
+        width: auto;
+        margin: 0 !important;
+    }
+    nav > ul > li {
+        display: block;
+        height: auto;
+        padding: 0;
+        border-bottom: 1px solid #eee;
+    }
+    nav > ul > li.miniLogo {
+        display: none;
+    }
+    nav > ul > li > a {
+        display: block;
+        height: 60px;
+        text-align: left;
+        margin: 0;
+        padding: 21px 20px 0;
+    }
+    #msgBtn,
+    #notiBtn {
+        display: none;
+    }
+    header .proIco {
+        float: left;
+    }
+    header .proIco .proName {
+        display: none;
+    }
+    header .proIco .proDrop > li.mobile {
+        display: block;
+    }
+    header .proIco .proDrop {
+        left: 0;
+        right: initial;
+        border-radius: 7px;
+        border-top-left-radius: 0;
+    }
+    header .proIco .proDrop:before,
+    header .proIco .proDrop:after {
+        display: none;
+    }
+    /*_____ Home _____*/
+    #form [main-search] .inside {
+        flex-flow: wrap;
+    }
+    #form [main-search] .txtGrp {
+        flex: none;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #eee;
+    }
+    #form [main-search] button[type="submit"] {
+        width: 100%;
+        height: 60px;
+        border-radius: 0 0 4px 4px;
+    }
+    #blocks .tileLst > li {
+        width: 50%;
+    }
+    #stars .flexRow > .col {
+        width: 50%;
+    }
+    #highlights .flexRow > .col {
+        width: 50%;
+    }
+    #how .lst > li {
+        width: 60%;
+    }
+    #match .flexRow {
+        flex-flow: wrap-reverse;
+    }
+    #match .flexRow > .col {
+        width: 100%;
+        padding: 15px;
+    }
+    #location .lst > li {
+        width: 33.3334%;
+    }
+    footer .flexRow > .col {
+        flex: none;
+        width: 50%;
+    }
+    /*_____ Common _____*/
+    #about .company .flexRow > .col {
+        width: 100%;
+    }
+    #about .weAre .lst > li {
+        width: 50%;
+    }
+    #about .founder .founderLst > li {
+        width: 100%;
+    }
+    #about #listing .flexRow > .col {
+        width: 100%;
+    }
+    #become #tblock .flexRow > .col {
+        padding: 15px;
+    }
+    #become #tblock .content h1 {
+        font-size: 34px;
+    }
+    #become #listing .flexRow > .col {
+        width: 100%;
+    }
+    #blog .flexRow > .col,
+    #press .flexRow > .col {
+        width: 100%;
+    }
+    #blog .lst > li,
+    #press .lst > li,
+    #press .lst > li:nth-child(5n+1),
+    #press .lst > li:nth-child(5n+2),
+    #press .lst > li:nth-child(5n+3) {
+        width: 50%;
+    }
+    #press .lst > li:nth-child(0n+3) {
+        width: 100%;
+    }
+    #blog .articleLst > li,
+    #press .articleLst > li {
+        width: 50%;
+    }
+    #contact .flexRow > .col {
+        width: 100%;
+        padding: 15px;
+    }
+    #profile .flexRow {
+        flex-flow: wrap-reverse;
+    }
+    #profile .flexRow > .col {
+        width: 100%;
+    }
+    #profile .proBlk {
+        margin-bottom: 15px;
+    }
+    #help .head {
+        flex-flow: wrap;
+    }
+    #help .head > .content {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 20px;
+    }
+    #help .srchBlk {
+        width: 60%;
+        min-width: initial;
+        margin: auto;
+    }
+    #help .flexRow > .col {
+        width: 50%;
+    }
+    /*_____ Dashboard _____*/
+    #dashboard .topBlk .icoBlk h3 {
+        display: none;
+    }
+    #inbox .flexRow {
+        flex-wrap: wrap;
+    }
+    #inbox .flexRow > .col {
+        width: 100%;
+    }
+    #inbox .flexRow > .col1 {
+        min-width: 100px;
+    }
+    #inbox .flexRow > .col2 {
+        height: 0;
+    }
+    #inbox .barBlk,
+    #inbox .chatBlk {
+        border: transparent !important;
+    }
+    #inbox .chatPerson {
+        display: flex !important;
+        text-align: left;
+        padding: 15px;
+        justify-content: initial;
+    }
+    #inbox .barBlk .ico,
+    #inbox .chatBlk .ico {
+        margin-right: 15px;
+    }
+    #inbox .chatPerson .backBtn {
+        display: block;
+    }
+    #inbox .chatBlk {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        visibility: hidden;
+        opacity: 0;
+        border: 0;
+        border-radius: 0;
+        transition: all ease 0.5s;
+        z-index: 100;
+    }
+    #inbox .chatBlk.active {
+        visibility: visible;
+        opacity: 1;
+    }
+    #inbox .chatBlk .chat {
+        padding: 10px 15px 0;
+    }
+    #inbox .chatBlk .chat .buble {
+        max-width: 100%;
+    }
+    #inbox .chatPerson .backBtn {
+        display: block;
+    }
+    #inbox .chatBlk .write {
+        margin: 0 -20px -20px;
+        padding: 15px;
+        border-top: 1px solid #eee;
+    }
+    #inbox .chatBlk .write textarea {
+        max-height: 50px !important;
+    }
+    #inbox .inner,
+    #inbox .barBlk h3 {
+        padding: 15px;
+    }
+    /*_____ Shop _____*/
+    #shop .flexRow > .col {
+        width: 50%;
+    }
+    #shop .flexRow > .col1,
+    #shop .flexRow > .col2 {
+        width: 100%;
+    }
+	.circleBtn {
+		display: block;
+	}
+	#shop .flexRow > .col1 {
+		padding: 0;
+	}
+	#shop .filters {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #fff;
+		padding: 20px 20px 60px;
+		margin: 0;
+		opacity: 0;
+		visibility: hidden;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		overflow: auto;
+		overflow-x: hidden;
+		z-index: 32;
+	}
+	#shop .filters.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	#shop.sellers .lst > li {
+		width: 50%;
+    }
+    #owl-similar .owl-nav {
+        display: none !important;
+    }
+    .shopTable table,
+	.shopTable table tbody,
+	.shopTable table tbody tr,
+	.shopTable table tbody tr > * {
+		display: block;
+		width: auto;
+		text-align: left;
+	}
+	.shopTable table thead {
+		display: none;
+	}
+	.shopTable table tbody tr > * {
+		display: flex;
+		padding: 15px;
+		border: 0;
+		border-bottom: 1px solid #eee;
+	}
+	.shopTable table tbody tr > *:before {
+		display: block;
+	}
+	.shopTable .pro_cart {
+		align-items: flex-start;
+		justify-content: flex-start;
+		text-align: left;
+		margin: 0;
+	}
+	.shopTable .qty {
+		margin: 0;
+	}
+	.shopTable table tfoot {
+		display: table;
+		width: 100%;
+	}
+	.shopTable table tfoot tr > * {
+		width: 50%;
+		padding: 10px 15px;
+	}
+	.shopTable table tfoot tr > *:nth-last-child(1) {
+		text-align: right;
+	}
+	.shopTable table tfoot tr > *:nth-child(1) {
+		text-align: left;
+	}
+	#cart .policyBlk .list > li {
+		width: 100%;
+    }
+    #orders .flexRow > .col {
+        width: 100%;
+    }
+    #orders .shopTable table thead tr > *:nth-child(2),
+    #orders .shopTable table tbody tr > *:nth-child(2) {
+        text-align: left;
+    }
+    #products .flexRow > .col {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    /*_____ All Site _____*/
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 15px;
+    }
+    p.pre {
+        font-size: 16px;
+    }
+    /*_____ Home _____*/
+    #location .lst > li {
+        width: 50%;
+    }
+    footer .flexRow > .col {
+        width: 100%;
+    }
+    footer h4 {
+        margin-bottom: 15px;
+    }
+    footer .lst > li {
+        margin-bottom: 8px;
+    }
+    .copyright {
+        margin-top: 0;
+    }
+    .copyright .inner {
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+    }
+    .copyright p {
+        margin: 0 0 10px;
+    }
+    /*_____ Common _____*/
+    #become #tblock .flexRow > .col {
+        width: 100%;
+    }
+    #become #tblock .flexRow > .col2 {
+        display: none;
+    }
+    #srch #srchLst > .col {
+        width: 50%;
+    }
+    /*_____ Dashboard _____*/
+    .jobBlk .lst > li {
+        padding: 20px 15px;
+    }
+    .jobBlk .lst > li:nth-child(1) {
+        padding-left: 15px;
+    }
+    .jobBlk .lst > li:nth-last-child(1) {
+        padding-right: 15px;
+    }
+    #payment .inner {
+        justify-content: center;
+    }
+    #payment .dropDown .dropLst {
+        left: 0;
+        max-width: 160px;
+        margin: auto;
+    }
+    .blockLst > table tr {
+        border-bottom: 1px solid #eee;
+    }
+    .blockLst > table tr > * {
+        display: block;
+        width: 100%;
+        padding: 3px 15px;
+        text-align: center;
+        border-bottom: 0;
+    }
+    .blockLst > table tr > *:nth-child(1) {
+        padding: 15px 15px 3px;
+    }
+    .blockLst > table tr > *:nth-last-child(1) {
+        padding: 3px 15px 15px;
+    }
+    .blockLst > table tr .name,
+    .blockLst > table tr .days,
+    .blockLst > table tr .orderId {
+        max-width: 260px;
+        margin: auto;
+    }
+    .blockLst > table tr .bTn {
+        justify-content: center;
+        margin-top: 0;
+    }
+    .blockLst > table tr .icoBlk {
+        flex-flow: column;
+    }
+    .blockLst > table tr .ico {
+        margin: 0 0 5px;
+    }
+    .blockLst > table tr .image {
+        margin: auto;
+    }
+    .blockLst > table tr .adres {
+        margin: auto;
+    }
+    #trans .blans {
+        flex-flow: column;
+        text-align: center;
+        margin: 0 -10px;
+    }
+    #trans .blans > li {
+        display: flex;
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+    #trans .blans > li > span {
+        flex: 1;
+        text-align: right;
+    }
+    /*_____ Shop _____*/
+    #detail .flexRow > .col {
+		width: 100%;
+    }
+    .popup[data-popup="gallery"] .gallery > li {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    /*_____ col-xx-? _____*/
+    .col-xx-12 {
+        width: 100%;
+    }
+    .col-xx-11 {
+        width: 91.66666667%;
+    }
+    .col-xx-10 {
+        width: 83.33333333%;
+    }
+    .col-xx-9 {
+        width: 75%;
+    }
+    .col-xx-8 {
+        width: 66.66666667%;
+    }
+    .col-xx-7 {
+        width: 58.33333333%;
+    }
+    .col-xx-6 {
+        width: 50%;
+    }
+    .col-xx-5 {
+        width: 41.66666667%;
+    }
+    .col-xx-4 {
+        width: 33.33333333%;
+    }
+    .col-xx-3 {
+        width: 25%;
+    }
+    .col-xx-2 {
+        width: 16.66666667%;
+    }
+    .col-xx-1 {
+        width: 8.33333333%;
+    }
+    /*_____ Common _____*/
+    .popup .list > li {
+        flex-flow: column;
+    }
+    .popup .list > li > div:nth-child(1) {
+        width: 100%;
+        min-width: 100px;
+        margin: 0 0 3px;
+    }
+    #about .weAre .lst > li {
+        width: 100%;
+    }
+    #about #listing .flexRow > .col {
+        width: 100%;
+    }
+    #blog .lst > li,
+    #press .lst > li,
+    #press .lst > li:nth-child(5n+1),
+    #press .lst > li:nth-child(5n+2),
+    #press .lst > li:nth-child(5n+3) {
+        width: 100%;
+    }
+    #resources .listing > li {
+        width: 100%;
+    }
+    #contact form .bTn {
+        justify-content: center;
+    }
+    #help .srchBlk {
+        width: 100%;
+    }
+    #help .flexRow > .col {
+        width: 100%;
+    }
+    /*_____ Dashboard _____*/
+    .jobBlk .lst {
+        flex-flow: wrap;
+    }
+    .jobBlk .lst > li {
+        width: 100%;
+        padding: 10px 15px;
+        text-align: center;
+    }
+    .jobBlk .lst > li:nth-child(1) {
+        padding-top: 25px;
+    }
+    .jobBlk .lst > li:nth-last-child(1) {
+        padding-bottom: 25px;
+    }
+    .jobBlk .lst > li .icoBlk {
+        flex-flow: column;
+    }
+    .jobBlk .lst > li .ico {
+        margin: 0 0 10px;
+    }
+    .jobBlk:after {
+        top: initial;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+    }
+    #booking .topBlk {
+        flex-flow: column;
+        text-align: center;
+    }
+    #booking .topBlk .icoBlk {
+        flex-flow: column;
+        flex: none;
+        margin: 0 0 30px;
+    }
+    #booking .topBlk .icoBlk .ico {
+        margin: 0 0 10px;
+    }
+    #profileSet .flexRow {
+        flex-flow: wrap;
+    }
+    #profileSet .flexRow > .col {
+        width: 100%;
+    }
+    #profileSet .flexRow > .col > h4 {
+        display: none;
+    }
+    #profileSet .imgLst > li {
+        width: 33.3334%;
+    }
+    .selectLst {
+        flex-flow: wrap;
+    }
+    .selectLst > li {
+        width: auto;
+        flex: auto;
+    }
+    #profile .sizeLst {
+        flex-flow: wrap;
+    }
+    #profile .sizeLst > li {
+        flex: none;
+        width: 50%;
+    }
+    .popup[data-popup="gallery"] .gallery > li {
+        width: 33.3334%;
+    }
+    /*_____ Shop _____*/
+    #detail .content h2 {
+		font-size: 20px;
+	}
+	#detail .itemPrice {
+		font-size: 28px;
+    }
+    .checkBlk {
+        flex-flow: column;
+    }
+    .checkBlk > .dpBlk {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #eee;
+    }
+    #products .imgLst > li {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    /*_____ col-xx-? _____*/
+    .col-xx-12,
+    .col-xx-11,
+    .col-xx-10,
+    .col-xx-9,
+    .col-xx-8,
+    .col-xx-7,
+    .col-xx-6,
+    .col-xx-5,
+    .col-xx-4,
+    .col-xx-3,
+    .col-xx-2,
+    .col-xx-1 {
+        width: 100% !important;
+    }
+    /*_____ Home _____*/
+    #banner {
+        background-position: center right -300px;
+    }
+    #how .lst > li .inner {
+        padding: 0;
+    }
+    #blocks .tileLst > li {
+        width: 100%;
+    }
+    #stars .flexRow > .col {
+        width: 100%;
+    }
+    #highlights .flexRow > .col {
+        width: 100%;
+    }
+    #location h1 {
+        text-align: left;
+    }
+    #location .lst > li {
+        width: 100%;
+    }
+    /*_____ Common _____*/
+    #logOn > .logBlk {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #logOn > .logBlk .inside {
+        max-width: 300px;
+    }
+    .logBlk .webBtn {
+        width: 100%;
+    }
+    .logBlk .socialBtn > a {
+        width: 100%;
+    }
+    .logBlk .socialBtn > a:not(:nth-child(1)) {
+        margin: 10px 0 0;
+    }
+    #about .founder .inner {
+        flex-flow: column;
+    }
+    #about .founder .inner .ico {
+        margin: 0 0 20px;
+    }
+    #become #tblock .content h1 {
+        font-size: 28px;
+    }
+    .newsBlk .cntnt p {
+        height: auto;
+    }
+    #blog .articleLst > li,
+    #press .articleLst > li {
+        width: 100%;
+    }
+    #resources .listing > li .inner {
+        padding: 0;
+    }
+    #resources .newsBlk {
+        flex-flow: wrap;
+    }
+    #resources .newsBlk .image {
+        width: 100%;
+        min-width: initial;
+        height: auto;
+    }
+    #resources .newsBlk .cntnt {
+        padding: 20px 0 0;
+    }
+    #srch #srchLst > .col {
+        width: 100%;
+    }
+    #gallery > li,
+    #profile ._list > li {
+        width: 100%;
+    }
+    .popup[data-popup="gallery"] .gallery > li {
+        width: 50%;
+    }
+    /*_____ Dashboard _____*/
+    #dashboard .topBlk {
+        padding: 30px 15px;
+    }
+    #dashboard .topBlk,
+    #dashboard .blkLst {
+        flex-flow: column;
+        text-align: center;
+    }
+    #dashboard .topBlk .icoBlk {
+        flex: none;
+        margin: 0 0 30px;
+    }
+    #dashboard .topBlk .icoBlk .ico {
+        margin: 0;
+    }
+    #dash .head {
+        flex-flow: wrap;
+    }
+    #dash .head > * {
+        width: 100%;
+    }
+    #dash .head > h1 {
+        flex: none;
+        margin: 0 !important;
+    }
+    #dash .head > .bTn {
+        margin: 0;
+    }
+    #dash .head > .bTn > * {
+        width: 100%;
+        margin: 2px 0;
+    }
+    #dash .head > *,
+    #dash .head > .bTn {
+        margin-top: 15px;
+    }
+    .payType .topHead {
+        flex-flow: column;
+        align-items: initial;
+    }
+    .payType .topHead h4 {
+        font-size: 16px;
+        margin: 0 0 10px;
+    }
+    .cardStrip .cardLst > li:nth-child(n+5) {
+        display: none;
+    }
+    #booking .topBlk .blkLst {
+        flex-flow: column;
+    }
+    #booking .btnBlk h5 {
+        font-size: 18px;
+    }
+    .notiBlk > .inner {
+        padding: 15px;
+        align-items: initial;
+    }
+    .notiBlk > .inner .ico {
+        width: 44px;
+        min-width: 44px;
+        height: 44px;
+        margin-right: 15px;
+    }
+    #profileSet .imgLst > li {
+        width: 50%;
+    }
+    #inbox .barBlk .frnds > li .cntnt {
+        max-width: 140px;
+    }
+    /*_____ Shop _____*/
+	#shop .topHead {
+		flex-flow: wrap;
+	}
+	#shop .topHead h1 {
+		font-size: 20px;
+		margin: 0 0 10px;
+	}
+	#shop .topHead .miniBtn {
+		width: 100%;
+	}
+	#shop .topHead .txtBox {
+		max-width: none;
+	}
+    #shop .flexRow > .col {
+        width: 100%;
+    }
+    #detail form .btnLst > * {
+		width: 100%;
+	}
+	#detail form .btnLst > .webBtn {
+		margin: 10px 0 0;
+		flex: none;
+    }
+    .shopTable table tbody tr > * {
+		display: block;
+	}
+	.shopTable table tbody tr > *:before {
+		margin-bottom: 5px;
+	}
+	#cart form .bTn .webBtn {
+		width: 100%;
+	}
+    #products .flexRow > .col {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    /*_____ All Site _____*/
+    p.pre {
+        font-size: 15px;
+    }
+    /*_____ Home _____*/
+    #how .lst > li {
+        width: 100%;
+    }
+    /*_____ Common _____*/
+    .popup ._inner {
+        padding: 15px;
+    }
+    .review .icoTxt {
+        flex-flow: column;
+    }
+    .review .icoTxt h4 {
+        margin-bottom: 0;
+    }
+    .review .icoTxt .rateYo {
+        margin-bottom: 7px;
+    }
+    #profile .sizeLst > li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    /*_____ Home _____*/
+    #banner .content h1 {
+        font-size: 28px;
+    }
+    #how .inner .icon {
+        max-width: 60px;
+        margin: 0 auto 15px;
+    }
+    /*_____ Common _____*/
+    #become #tblock .content h1 {
+        font-size: 24px;
+    }
+}
+
+/*
+|----------------------------------------------------------------------
+|       Media Queries Height
+|----------------------------------------------------------------------
+*/
+
+@media screen and (max-height:420px) {
+}
+
+@media screen and (min-height:768px) {
+}
+
+@media screen and (min-height:1040px) {
+}

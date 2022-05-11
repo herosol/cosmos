@@ -1,0 +1,6 @@
+{
+    "require": {
+        "stripe/stripe-php": "^7.14",
+        "twilio/sdk": "^5.40"
+    }
+}
